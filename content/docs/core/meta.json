@@ -1,4 +1,11 @@
 {
     "title": "Framework core",
-    "root": true
+    "root": true,
+    "pages": [
+        "index",
+        "motivation",
+        "community",
+        "---Guides---",
+        "cli"
+    ]
 }

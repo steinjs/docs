@@ -8,12 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^14.2.5",
-    "fumadocs-ui": "12.5.4",
     "fumadocs-core": "12.5.4",
+    "fumadocs-mdx": "8.2.34",
+    "fumadocs-ui": "12.5.4",
+    "lucide-react": "^0.412.0",
+    "next": "^14.2.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "fumadocs-mdx": "8.2.34"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/mdx": "^2.0.13",

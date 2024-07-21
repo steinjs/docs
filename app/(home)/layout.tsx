@@ -5,7 +5,7 @@ import { LinkItemType } from 'fumadocs-ui/layout';
 const navLinks: LinkItemType[] = [
   {
     text: 'Docs',
-    url: '/docs',
+    url: '/docs/core',
     active: 'nested-url',
   },
   {

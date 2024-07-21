@@ -3,12 +3,65 @@ title: Getting Started
 description: Learn how to start building your project with Stein.
 icon: Rocket
 ---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { CodeBlock } from 'fumadocs-ui/components/codeblock';
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+Welcome to the Stein documentation. Here you will find all the information you need to get started with Stein.
+If you want to learn more about Stein and why it was created, please read our [motivation](/docs/core/motivation).
 
-## What is Next?
+## Creating a new project
+Follow this guide to quickly get started with Stein.
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
-</Cards>
+**Prerequisites:**
+- Node.js 18.0.0 or higher
+- Text editor (VSCode, Sublime, Atom, etc.)
+- Terminal (PowerShell, CMD, Bash, etc.)
+
+If you have all of these prerequisites, you are ready to start building your project.
+Open your terminal and run the following command to create a new project:
+
+<Tabs items={["npm", "yarn", "pnpm", "bun"]}>
+```bash tab="npm"
+npx @steinjs/cli create
+```
+
+```bash tab="yarn"
+yarn dlx @steinjs/cli create
+```
+
+```bash tab="pnpm"
+pnpx @steinjs/cli create
+```
+
+```bash tab="bun"
+bunx @steinjs/cli create
+```
+</Tabs>
+
+The process will look something like this:
+![stein](/stein_cil.gif)
+
+After you have created your project, you can enter the project directory and start the development server with the following command:
+
+<Tabs items={["npm", "yarn", "pnpm", "bun"]}>
+```bash tab="npm"
+npm run dev
+```
+
+```bash tab="yarn"
+yarn dev
+```
+
+```bash tab="pnpm"
+pnpm dev
+```
+
+```bash tab="bun"
+bun dev
+```
+</Tabs>
+
+Now you can open your browser and navigate to [http://localhost:3000](http://localhost:3000) to see your project.
+You should see a basic page appear in your browser.
+
+You are now ready for development! You can start building your project by editing the files in the `src` directory using your preferred code editor.

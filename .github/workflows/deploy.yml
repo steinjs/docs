@@ -1,0 +1,20 @@
+name: Deploy documentation on Vercel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: amondnet/vercel-action@v25
+        with:
+          github-comment: false
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-args: '--prod'

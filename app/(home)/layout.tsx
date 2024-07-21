@@ -1,5 +1,5 @@
 import { HomeLayout } from 'fumadocs-ui/home-layout';
-import Logo from '../Logo';
+import Logo from '../../components/Logo';
 import { LinkItemType } from 'fumadocs-ui/layout';
 
 const navLinks: LinkItemType[] = [

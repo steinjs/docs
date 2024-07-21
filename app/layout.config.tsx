@@ -3,7 +3,7 @@ import { type HomeLayoutProps } from 'fumadocs-ui/home-layout';
 import { RootToggle } from 'fumadocs-ui/components/layout/root-toggle';
 import { pageTree } from '@/app/source';
 
-import Logo from './Logo';
+import Logo from '../components/Logo';
 import { Blocks, Library } from 'lucide-react';
 
 // shared configuration

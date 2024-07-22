@@ -38,7 +38,7 @@ export const docsOptions: DocsLayoutProps = {
             },
             {
               title: 'Plugins',
-              description: 'Plugins for Stein',
+              description: 'Plug and play integrations for Stein',
               url: '/docs/plugins',
               icon: <div className='size-9 shrink-0 rounded-md bg-gradient-to-t from-background/80 bg-purple-500/60 p-1.5'>
                 <Blocks className='text-purple-600 dark:text-purple-200' />

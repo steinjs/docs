@@ -1,0 +1,43 @@
+---
+title: TailwindCSS
+description: Information about the TailwindCSS plugin.
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+The Stein TailwindCSS plugin adds support for TailwindCSS. Just install the plugin and you are ready to go, no extra setup is required.
+
+## Installation
+
+<Tabs items={["npm", "yarn", "pnpm", "bun"]}>
+```bash tab="npm"
+npm add -D stein-plugin-tailwindcss
+```
+
+```bash tab="yarn"
+yarn add -D stein-plugin-tailwindcss
+```
+
+```bash tab="pnpm"
+pnpm add -D stein-plugin-tailwindcss
+```
+
+```bash tab="bun"
+bun add -D stein-plugin-tailwindcss
+```
+</Tabs>
+
+## Usage
+
+```typescript
+import { defineConfig } from "@steinjs/core";
+import tailwindcss from "stein-plugin-tailwindcss";
+
+export default defineConfig({
+  plugins: [tailwindcss({
+    // options, see below
+  })]
+});
+```
+
+## Options
+> For now, there's no options available. We're trying to see what would be the best way to configure TailwindCSS in Stein. If you have any suggestions, feel free to open an issue or a pull request.

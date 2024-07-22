@@ -1,0 +1,69 @@
+---
+title: UnoCSS
+description: Information about the UnoCSS plugin.
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+The Stein UnoCSS plugin adds support for UnoCSS. Just install the plugin and you are ready to go, no extra setup is required.
+It is based on the [`@unocss/astro`](https://github.com/unocss/unocss/blob/main/packages/astro) integration.
+
+## Installation
+
+<Tabs items={["npm", "yarn", "pnpm", "bun"]}>
+```bash tab="npm"
+npm add -D stein-plugin-unocss
+```
+
+```bash tab="yarn"
+yarn add -D stein-plugin-unocss
+```
+
+```bash tab="pnpm"
+pnpm add -D stein-plugin-unocss
+```
+
+```bash tab="bun"
+bun add -D stein-plugin-unocss
+```
+</Tabs>
+
+## Usage
+
+```typescript
+import { defineConfig } from "@steinjs/core";
+import unocss from "stein-plugin-unocss";
+
+export default defineConfig({
+  plugins: [unocss({
+    // options, see below
+  })]
+});
+```
+
+If you use `injectReset: true`, make sure to also install `@unocss/reset`:
+
+<Tabs items={["npm", "yarn", "pnpm", "bun"]}>
+```bash tab="npm"
+npm add @unocss/reset
+```
+
+```bash tab="yarn"
+yarn add @unocss/reset
+```
+
+```bash tab="pnpm"
+pnpm add @unocss/reset
+```
+
+```bash tab="bun"
+bun add @unocss/reset
+```
+</Tabs>
+
+## Options
+
+| Property | Type | Default | Description |
+| --- | --- | --- | --- |
+| `injectEntry` | `boolean` | `true` | Automatically add UnoCSS entry import in the `index.html`. |
+| `injectReset` | `boolean \| string` | `false` | When passing `true`, `@unocss/reset/tailwind.css` will be used. |
+| `injectExtra` | `string[]` | `[]` | Inject extra imports. |

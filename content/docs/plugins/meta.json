@@ -1,4 +1,11 @@
 {
     "title": "Plugin reference",
-    "root": true
+    "root": true,
+    "pages": [
+        "index",
+        "plugin-guide",
+        "---Plugins---",
+        "tailwindcss",
+        "unocss"
+    ]
 }

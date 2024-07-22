@@ -30,7 +30,7 @@ export const docsOptions: DocsLayoutProps = {
           options={[
             {
               title: 'Core',
-              description: 'All about Stein core',
+              description: 'The core of Stein',
               url: '/docs/core',
               icon: <div className='size-9 shrink-0 rounded-md bg-gradient-to-t from-background/90 bg-blue-600/60 p-1.5'>
                 <Library className='text-blue-600 dark:text-blue-200' />
@@ -38,7 +38,7 @@ export const docsOptions: DocsLayoutProps = {
             },
             {
               title: 'Plugins',
-              description: 'Info about Stein plugins',
+              description: 'Plugins for Stein',
               url: '/docs/plugins',
               icon: <div className='size-9 shrink-0 rounded-md bg-gradient-to-t from-background/80 bg-purple-500/60 p-1.5'>
                 <Blocks className='text-purple-600 dark:text-purple-200' />

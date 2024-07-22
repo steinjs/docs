@@ -3,15 +3,45 @@ title: CLI Usage
 description: Learn how to use the Stein CLI.
 ---
 
-## Code Block
+At the moment, the Stein CLI is still in development and quite barebones. It is ready with commands required for developing a Stein project, but it is missing some quality of life features.
 
-```js
-console.log('Hello World');
+## Usage
+There are several ways to use the CLI. For the initial project setup, it is recommended to use a tool like `npx`, as shown in the [Getting Started](/docs/core/getting-started) guide.
+Inside your project, you can use the CLI directly from the command line using your package manager (e.g. `pnpm stein`).
+
+If you frequently use the CLI, you can install it globally using your package manager, e.g.:
+```bash
+npm install -g @steinjs/cli
+```
+Now you will have the `stein` command available everywhere on your system. The commands referenced below will assume that you have installed the CLI globally.
+
+## Commands
+The CLI currently has the following commands:
+
+### Create
+Scaffold a new Stein project using a simple step by step wizard. Heavily inspired by the [Astro CLI]() and powered by [Clack]().
+
+```bash
+stein create
+```	
+
+### Dev
+Start the development server for your project (powered by Vite).
+
+```bash
+stein dev
 ```
 
-## Cards
+### Build
+Build your project for production. The output is a SPA (single page application) which can be deployed to any static hosting service (e.g. GitHub Pages, Netlify, Vercel, etc.).
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
-</Cards>
+```bash
+stein build
+```
+
+## Planned commands and improvements
+- [ ] `stein add` - Add a plugin to an existing project
+- [ ] Improvements to the `create` command
+- And more (we are open to suggestions!)
+
+We want to build a CLI that is easy to use and powerful at the same time. If you have any suggestions, please open an issue or a pull request on GitHub.

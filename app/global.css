@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animate-blob {
+    animation: blob1 5s ease-in infinite;
+}
+
+.animate-blob-2 {
+    animation: blob1 5s ease-in infinite;
+    animation-delay: 3s;
+}
+
+@keyframes blob1 {
+    0% {
+        transform: scale(1.35) translateX(-60px);
+    }
+
+    50% {
+        transform: scale(1) translateX(0);
+    }
+
+    100% {
+        transform: scale(1.35) translateX(-60px);
+    }
+}

@@ -22,24 +22,26 @@ Open your terminal and run the following command to create a new project:
 
 <Tabs items={["npm", "yarn", "pnpm", "bun"]}>
 ```bash tab="npm"
-npx @steinjs/cli create
+npm init stein
 ```
 
 ```bash tab="yarn"
-yarn dlx @steinjs/cli create
+yarn create stein
 ```
 
 ```bash tab="pnpm"
-pnpx @steinjs/cli create
+pnpm create stein
 ```
 
 ```bash tab="bun"
-bunx @steinjs/cli create
+bun create stein
 ```
 </Tabs>
 
 The process will look something like this:
 ![stein](/stein_cli.gif)
+
+If you encounter any issues, try running the command using `stein@latest` to ensure you are using the latest version of the CLI. If your issue persists, please open an issue on our [GitHub repository](https://github.com/steinjs/stein/issues).
 
 ## Development server
 After you have created your project, you can enter the project directory and start the development server with the following command:

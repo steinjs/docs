@@ -23,7 +23,14 @@ Scaffold a new Stein project using a simple step by step wizard. Heavily inspire
 
 ```bash
 stein create
-```	
+```
+
+### Add
+Add integrations (plugins and tools) to your existing Stein project. Automatically adds required plugins, config files and depdendencies. The command accepts multiple arguments, allowing you to install all integrations you want at once.
+
+```bash
+stein add <integrations...>
+```
 
 ### Dev
 Start the development server for your project (powered by Vite).
@@ -38,6 +45,8 @@ Build your project for production. The output is a SPA (single page application)
 ```bash
 stein build
 ```
+
+
 
 ## Planned commands and improvements
 - [ ] `stein add` - Add a plugin to an existing project
